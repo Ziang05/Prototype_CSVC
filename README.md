@@ -46,14 +46,21 @@ npm run build
   - Tự sinh ID cho thiết bị nếu người dùng để trống
   - Sinh và in tem mã vạch trước khi xác nhận nhập kho
   - Theo dõi stock quantity và stock transaction theo loại thiết bị
+  - Lập phiếu cấp phát theo cấu trúc thông tin chung và nhiều thiết bị
+  - Chọn phòng ban, vị trí nhận, người tiếp nhận và ngày cấp phát dự kiến
+  - Chỉ chọn thiết bị đang trong kho; mỗi thiết bị là một dòng duyệt độc lập
+  - Lập phiếu thu hồi theo từng phòng ban, chỉ chọn thiết bị phòng ban đó đang quản lý
+  - Lập phiếu thanh lý với căn cứ, lý do, phương thức đề xuất và thiết bị xuống cấp tại kho
 - Sử dụng thiết bị:
-  - Mượn / trả
-  - Điều chuyển
-  - Báo hỏng
+  - Lập phiếu mượn với người chịu trách nhiệm, thời gian mượn/trả dự kiến và nhiều thiết bị
+  - Lập phiếu điều chuyển theo một cặp phòng ban nguồn/nhận và vị trí nhận dự kiến
+  - Báo hỏng một thiết bị với mức độ, ảnh hưởng vận hành và mô tả hiện tượng
+  - Chỉ ghi nhận trả, bàn giao hoặc kết quả xử lý ở bước sau khi phiếu được duyệt
 - Bảo trì:
-  - Bảo trì
-  - Sửa chữa
-  - Bảo hành
+  - Lập phiếu bảo trì định kỳ/đột xuất với kế hoạch, phạm vi và nhiều thiết bị
+  - Lập phiếu sửa chữa với nội dung yêu cầu riêng cho từng thiết bị và liên kết báo hỏng
+  - Kiểm tra phiếu nhập, nhà cung cấp và hạn bảo hành trước khi tạo yêu cầu bảo hành
+  - Chỉ ghi nhận kết quả bảo trì, sửa chữa hoặc bảo hành ở bước xử lý sau duyệt
 - Duyệt phiếu theo vai trò.
 - Tra cứu lịch sử thiết bị.
 - Xem các sơ đồ workflow/usecase đã copy vào `public/docs`.
